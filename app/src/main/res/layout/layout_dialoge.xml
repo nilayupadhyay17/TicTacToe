@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="#FBF6D9">
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="40dp">
+
+        <TextView
+            android:id="@+id/tvP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:text="P1"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            />
+
+        <ImageView
+            android:id="@+id/ivP1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvP1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/cell_x" />
+        <TextView
+            android:id="@+id/tvP1Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivP1"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="95dp">
+
+        <TextView
+            android:id="@+id/tvP2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="P2"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:textStyle="italic"/>
+
+
+        <ImageView
+            android:id="@+id/ivP2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvP2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/cell_o" />
+
+
+
+        <TextView
+            android:id="@+id/tvP2Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivP2"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:text="0"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rlP1"
+        android:layout_below="@+id/rlP1"
+        android:layout_marginTop="35dp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:text="New Game"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnNewGame"
+        android:layout_alignEnd="@+id/rlP2"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:text="Exit" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:textSize="30sp"
+        android:text="GameOver !!" />
+
+
+</RelativeLayout>
